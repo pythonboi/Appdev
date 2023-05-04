@@ -6,6 +6,7 @@ from django.core.validators import RegexValidator
 
 
 class Pizzeria(models.Model):
+
     pizzeria_name = models.CharField(max_length=200, blank=False)
     street = models.CharField(max_length=400, blank=True)
     city = models.CharField(max_length=400, blank=True)
@@ -20,6 +21,5 @@ class Pizzeria(models.Model):
     email = models.EmailField(max_length=245, blank=True)
     active = models.BooleanField(default=True)
 
-
-def __str__(self):
-    return "{}, {}".format(self.pizzeria_name, self.city)
+    def __str__(self):
+        return "{}, {}".format(self.pizzeria_name, self.city)

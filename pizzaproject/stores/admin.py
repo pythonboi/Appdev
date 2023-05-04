@@ -1,8 +1,8 @@
 from django.contrib import admin
+from .models import Pizzeria
 
 # Register your models here.
 
-from .models import Pizzeria
 
 # This will register the Pizzeria model into the admin.py to abe able to see it in our admin page
 
